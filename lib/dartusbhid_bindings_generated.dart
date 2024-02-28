@@ -747,7 +747,7 @@ class DartusbhidBindings {
       _hid_version_strPtr.asFunction<ffi.Pointer<ffi.Char> Function()>();
 }
 
-class hid_api_version extends ffi.Struct {
+base class hid_api_version extends ffi.Struct {
   @ffi.Int()
   external int major;
 
@@ -758,7 +758,7 @@ class hid_api_version extends ffi.Struct {
   external int patch;
 }
 
-class hid_device_ extends ffi.Opaque {}
+base class hid_device_ extends ffi.Opaque {}
 
 /// @brief HID underlying bus types.
 ///
@@ -791,7 +791,7 @@ abstract class hid_bus_type {
 }
 
 /// hidapi info structure
-class hid_device_info extends ffi.Struct {
+base class hid_device_info extends ffi.Struct {
   /// Platform-specific device path
   external ffi.Pointer<ffi.Char> path;
 

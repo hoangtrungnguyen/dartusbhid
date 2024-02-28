@@ -1,5 +1,6 @@
 {
-    "files.associations": {
-        "hidapi.h": "c"
-    }
+  "files.associations": {
+    "hidapi.h": "c"
+  },
+  "dart.flutterSdkPath": ".fvm\\versions\\3.19.0"
 }
